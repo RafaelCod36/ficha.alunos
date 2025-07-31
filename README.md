@@ -1,2 +1,23 @@
-# ficha.alunos
-Ficha de cadastro de alunos
+#include <stdio.h>
+
+int main(){
+    int idade, matricula;
+    float altura;
+    char nome[50];
+
+    printf("Digite a idade: \n");
+    scanf("%d", &idade); 
+
+    printf("Digite sua altura: \n");
+    scanf("%f", &altura); 
+
+    printf("Digite o seu nome: \n");
+    scanf("%s", nome);
+
+    printf("Digite sua matricula: \n");
+    scanf("%d", &matricula); 
+
+    printf("Resumo: %s, %.2f, %d anos, matricula %d\n", nome, altura, idade, matricula); 
+
+    return 0;
+}
